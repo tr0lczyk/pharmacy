@@ -10,88 +10,38 @@
         style="@style/image_title" />
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:src="@drawable/pharmacy2"
-        android:adjustViewBounds="true"/>
+        style="@style/image_pharmacy_people" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/view_group_dimens"
-        android:elevation="@dimen/margin_padding_value"
-        android:background="@drawable/rectangle_background"
-        android:padding="@dimen/view_group_dimens">
+    <RelativeLayout style="@style/description_layout">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/ziko_pharmacy"
-            android:textSize="@dimen/name_sp"
-            android:textStyle="bold"
-            android:textColor="@color/font_color"
             android:id="@+id/name"
-            android:fontFamily="serif-monospace"
-            android:layout_marginBottom="@dimen/name_margin_bottom"/>
+            style="@style/name_view" />
 
         <TextView
             android:id="@+id/adress"
-            android:layout_below="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/beskidzka"
-            android:textColor="@color/font_color"
-            android:layout_marginBottom="@dimen/margin_padding_value"
-            android:drawableLeft="@drawable/location"
-            android:drawablePadding="@dimen/margin_padding_value"
-            android:textSize="@dimen/description_size"/>
+            style="@style/address_view" />
 
         <TextView
             android:id="@+id/website"
-            android:layout_below="@+id/adress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/zikoapteka_pl"
-            android:textColor="@color/font_color"
-            android:layout_marginBottom="@dimen/margin_padding_value"
-            android:drawableLeft="@drawable/wifi"
-            android:drawablePadding="@dimen/margin_padding_value"
-            android:textSize="@dimen/description_size"/>
+            style="@style/website_view" />
 
         <TextView
             android:id="@+id/phone"
-            android:layout_below="@+id/website"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="@string/phone"
-            android:textColor="@color/font_color"
-            android:layout_marginBottom="@dimen/margin_padding_value"
-            android:drawableLeft="@drawable/phone"
-            android:drawablePadding="@dimen/margin_padding_value"
-            android:textSize="@dimen/description_size"/>
+            style="@style/phone_view" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/phone"
-            android:drawableLeft="@drawable/time"
-            android:drawablePadding="@dimen/margin_padding_value"
             android:text="@string/open_time"
-            android:textColor="@color/font_color"
-            android:textSize="@dimen/slogan_size"/>
+            style="@style/open_view" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:gravity="center"
-            android:fontFamily="serif-monospace"
             android:text="@string/slogan"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/font_color"
-            android:textStyle="bold" />
+            style="@style/slogan_view" />
     </RelativeLayout>
 
 </LinearLayout>

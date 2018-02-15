@@ -8,4 +8,97 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="card_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="image_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="image_pharmacy_people">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="description_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/view_group_dimens</item>
+        <item name="android:elevation">@dimen/margin_padding_value</item>
+        <item name="android:background">@drawable/rectangle_background</item>
+        <item name="android:padding">@dimen/view_group_dimens</item>
+    </style>
+
+    <style name="name_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/name_sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:layout_marginBottom">@dimen/name_margin_bottom</item>
+    </style>
+
+    <style name="address_view">
+        <item name="android:layout_below">@+id/name</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:layout_marginBottom">@dimen/margin_padding_value</item>
+        <item name="android:drawableLeft">@drawable/location</item>
+        <item name="android:drawablePadding">@dimen/margin_padding_value</item>
+        <item name="android:textSize">@dimen/description_size</item>
+    </style>
+
+    <style name="website_view">
+        <item name="android:layout_below">@+id/adress</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:layout_marginBottom">@dimen/margin_padding_value</item>
+        <item name="android:drawableLeft">@drawable/wifi</item>
+        <item name="android:drawablePadding">@dimen/margin_padding_value</item>
+        <item name="android:textSize">@dimen/description_size</item>
+    </style>
+
+    <style name="phone_view">
+        <item name="android:layout_below">@+id/website</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:layout_marginBottom">@dimen/margin_padding_value</item>
+        <item name="android:drawableLeft">@drawable/phone</item>
+        <item name="android:drawablePadding">@dimen/margin_padding_value</item>
+        <item name="android:textSize">@dimen/description_size</item>
+    </style>
+
+    <style name="open_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_below">@+id/phone</item>
+        <item name="android:drawableLeft">@drawable/time</item>
+        <item name="android:drawablePadding">@dimen/margin_padding_value</item>
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:textSize">@dimen/slogan_size</item>
+    </style>
+
+    <style name="slogan_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">serif-monospace</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:textColor">@color/font_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">pharmacy_business_card</string>
+    <string name="ziko_pharmacy">Ziko Pharmacy</string>
+    <string name="beskidzka">Beskidzka 30A, 30-001 Kraków</string>
+    <string name="zikoapteka_pl">zikoapteka.pl</string>
+    <string name="phone">+48 679 837 653</string>
+    <string name="open_time">8:00 - 22:00</string>
+    <string name="slogan">GET HEALTHY WITH US!</string>
 </resources>
