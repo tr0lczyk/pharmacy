@@ -2,16 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context="com.example.android.pharmacy_business_card.MainActivity"
-    android:orientation="vertical">
+    style="@style/card_layout">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:src="@drawable/eziko"
-        android:adjustViewBounds="true"/>
+        style="@style/image_title" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -22,53 +18,57 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
-        android:elevation="8dp"
+        android:layout_margin="@dimen/view_group_dimens"
+        android:elevation="@dimen/margin_padding_value"
         android:background="@drawable/rectangle_background"
-        android:padding="16dp">
+        android:padding="@dimen/view_group_dimens">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Ziko Pharmacy"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/ziko_pharmacy"
+            android:textSize="@dimen/name_sp"
             android:textStyle="bold"
-            android:textColor="#800000"
+            android:textColor="@color/font_color"
             android:id="@+id/name"
-            android:layout_marginBottom="8dp"/>
+            android:fontFamily="serif-monospace"
+            android:layout_marginBottom="@dimen/name_margin_bottom"/>
 
         <TextView
             android:id="@+id/adress"
             android:layout_below="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Beskidzka 30A, 30-001 Kraków"
-            android:textColor="#800000"
-            android:layout_marginBottom="8dp"
+            android:text="@string/beskidzka"
+            android:textColor="@color/font_color"
+            android:layout_marginBottom="@dimen/margin_padding_value"
             android:drawableLeft="@drawable/location"
-            android:drawablePadding="8dp"/>
+            android:drawablePadding="@dimen/margin_padding_value"
+            android:textSize="@dimen/description_size"/>
 
         <TextView
             android:id="@+id/website"
             android:layout_below="@+id/adress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="zikoapteka.pl"
-            android:textColor="#800000"
-            android:layout_marginBottom="8dp"
+            android:text="@string/zikoapteka_pl"
+            android:textColor="@color/font_color"
+            android:layout_marginBottom="@dimen/margin_padding_value"
             android:drawableLeft="@drawable/wifi"
-            android:drawablePadding="8dp"/>
+            android:drawablePadding="@dimen/margin_padding_value"
+            android:textSize="@dimen/description_size"/>
 
         <TextView
             android:id="@+id/phone"
             android:layout_below="@+id/website"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="+48 679 837 653"
+            android:text="@string/phone"
             android:textColor="@color/font_color"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/margin_padding_value"
             android:drawableLeft="@drawable/phone"
-            android:drawablePadding="8dp"/>
+            android:drawablePadding="@dimen/margin_padding_value"
+            android:textSize="@dimen/description_size"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -77,9 +77,10 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/phone"
             android:drawableLeft="@drawable/time"
-            android:drawablePadding="8dp"
-            android:text="8:00 - 22:00"
-            android:textColor="@color/font_color" />
+            android:drawablePadding="@dimen/margin_padding_value"
+            android:text="@string/open_time"
+            android:textColor="@color/font_color"
+            android:textSize="@dimen/slogan_size"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -87,7 +88,7 @@
             android:layout_alignParentBottom="true"
             android:gravity="center"
             android:fontFamily="serif-monospace"
-            android:text="GET HEALTHY WITH US!"
+            android:text="@string/slogan"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/font_color"
             android:textStyle="bold" />

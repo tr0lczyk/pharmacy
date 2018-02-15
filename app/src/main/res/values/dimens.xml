@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_padding_value">8dp</dimen>
+    <dimen name="view_group_dimens">16dp</dimen>
+    <dimen name="name_margin_bottom">12dp</dimen>
+    <dimen name="name_sp">24sp</dimen>
+    <dimen name="description_size">16sp</dimen>
+    <dimen name="slogan_size">16sp</dimen>
+</resources>
