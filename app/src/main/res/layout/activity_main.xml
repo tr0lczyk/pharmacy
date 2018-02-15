@@ -1,18 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.pharmacy_business_card.MainActivity">
+    tools:context="com.example.android.pharmacy_business_card.MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/eziko"
+        android:adjustViewBounds="true"/>
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pharmacy2"
+        android:adjustViewBounds="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:elevation="8dp"
+        android:background="@drawable/rectangle_background"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Ziko Pharmacy"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            android:textColor="#800000"
+            android:id="@+id/name"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/adress"
+            android:layout_below="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beskidzka 30A, 30-001 Kraków"
+            android:textColor="#800000"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="8dp"/>
+
+        <TextView
+            android:id="@+id/website"
+            android:layout_below="@+id/adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="zikoapteka.pl"
+            android:textColor="#800000"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/wifi"
+            android:drawablePadding="8dp"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_below="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+48 679 837 653"
+            android:textColor="@color/font_color"
+            android:layout_marginBottom="8dp"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/phone"
+            android:drawableLeft="@drawable/time"
+            android:drawablePadding="8dp"
+            android:text="8:00 - 22:00"
+            android:textColor="@color/font_color" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:fontFamily="serif-monospace"
+            android:text="GET HEALTHY WITH US!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/font_color"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
